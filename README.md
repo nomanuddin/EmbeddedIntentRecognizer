@@ -16,7 +16,7 @@ Simple command line intent recognition tool
 - Tell me an interesting fact. (Intent: Get Fact)
 
 #### Code logic explanation:
-- Step 1: String is comared for relevant intent
+- Step 1: String is compared for relevant intent
 - Step 2: Respective class is instantiated, and the relative method is called
 - Step 3: Required intent and info is displayed
 - Step 4: exit keyword entered as question breaks the loop and application is closed
