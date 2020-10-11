@@ -6,6 +6,10 @@ cmake_minimum_required (VERSION 3.8)
 project ("IntentApp")
 
 # Add source to this project's executable.
-add_executable (IntentApp "IntentApp.cpp" "IntentApp.h")
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+add_executable (IntentApp "IntentApp.cpp" "IntentApp.h")
+set_property(TARGET IntentApp PROPERTY CXX_STANDARD 17)
+
+target_compile_features(IntentApp PUBLIC cxx_std_17)
 # TODO: Add tests and install targets if needed.
